@@ -55,6 +55,8 @@ source venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 
+
+
 4. Database Seeding
 Populate your freshly created local SQLite database with mocked digital products before turning the server on:
 
