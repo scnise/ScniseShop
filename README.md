@@ -38,7 +38,9 @@ Ensure you have a stable production version of Python installed (Python 3.10, 3.
 Create a .env file in the root directory of the project alongside main.py:
 
 BOT_TOKEN=1234567890:ABCdefGhIJKlmNoPQRsTUVwXyZ  # Your Telegram Bot Token
+
 DB_URL=sqlite+aiosqlite:///scniseshop.db         # Async SQLite Database Connection String
+
 ADMIN_ID=123456789                               # Your Telegram Numerical ID
 
 3. Virtual Environment & Dependency Installation
