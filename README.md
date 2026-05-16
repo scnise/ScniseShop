@@ -46,10 +46,10 @@ Ensure you have a stable production version of Python installed (Python 3.10, 3.
 2. Environment Configuration
 Create a .env file in the root directory of the project alongside main.py:
 
-Фрагмент кода
 BOT_TOKEN=1234567890:ABCdefGhIJKlmNoPQRsTUVwXyZ  # Your Telegram Bot Token
 DB_URL=sqlite+aiosqlite:///scniseshop.db         # Async SQLite Database Connection String
 ADMIN_ID=123456789                               # Your Telegram Numerical ID
+
 3. Virtual Environment & Dependency Installation
 Open your terminal inside the project root folder and execute the following commands to spin up an isolated virtual environment and fetch the packages:
 
@@ -63,6 +63,7 @@ source venv/bin/activate
 # Upgrade package manager and install dependencies
 pip install --upgrade pip
 pip install -r requirements.txt
+
 4. Database Seeding
 Populate your freshly created local SQLite database with mocked digital products before turning the server on:
 
