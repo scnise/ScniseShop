@@ -26,17 +26,8 @@ Configuration & Validation: Pydantic Settings v2 (Type-safe environmental variab
 
 Session Middleware Lifecycle: The bot uses an architectural Outer Middleware interceptor pattern injected directly into the execution flow. It automatically handles database connection pooling, opening a secure session per Telegram event, injecting it into handlers, and cleanly committing/closing it without resource leaks.
 
-📂 Project Structure
-Plaintext
-Generator/
-│
-├── main.py          # Application entry point, router aggregator, and middleware injector
-├── handlers.py      # Core routing logic, inline button handlers, and e-commerce business operations
-├── database.py      # Declarative database models, SQLAlchemy schema initialization, and async session poolers
-├── config.py        # Pydantic configuration parsing and strict validation schemas
-├── seed.py          # Database seeding script for generating mocked digital store products
-├── requirements.txt # System dependency manifests
-└── .env             # Cryptographic tokens and environmental settings (git-ignored)
+
+
 ⚙️ Installation & Setup Guide
 1. Prerequisites
 Ensure you have a stable production version of Python installed (Python 3.10, 3.11, or 3.12 is highly recommended).
